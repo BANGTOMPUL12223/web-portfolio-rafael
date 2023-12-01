@@ -1,3 +1,13 @@
+import Navbar from "./navbar";
+
 export default function Home() {
-  return <>Web Portfolio Tompul</>;
+  return (
+    <>
+      <Navbar />
+
+      <div className="pt-10">
+        <p>tompul</p>
+      </div>
+    </>
+  );
 }
