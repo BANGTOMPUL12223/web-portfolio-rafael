@@ -6,7 +6,7 @@ import NavbarItem from "./navbarItems";
 export default function Navbar({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className="fixed bg-black w-screen py-7 flex justify-around items-center">
+      <div className="fixed bg-black w-screen py-4 flex justify-around items-center">
         <Link
           href={"/"}
           className="text-xl text-yellow-300 font-semibold transition hover:text-white"
@@ -23,7 +23,7 @@ export default function Navbar({ children }: { children: ReactNode }) {
         </Link>
       </div>
 
-      <div className="py-24 px-8">{children}</div>
+      <div className="py-20 px-4">{children}</div>
 
       <div className="py-5 backdrop-blur-sm border border-slate-500 rounded-t-[30px] fixed bottom-0 w-screen md:hidden">
         <ul className="font-semibold text-sm flex justify-around">
