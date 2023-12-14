@@ -11,8 +11,8 @@ export default function Home() {
             className="w-full"
             src={"/profil.jpeg"}
             alt="Rafael Paulus Sitompul"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
 

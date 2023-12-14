@@ -17,8 +17,8 @@ export default function AboutLayout({ children }: { children: ReactNode }) {
                 className="w-full"
                 src={"/profil.jpeg"}
                 alt="profile"
-                width={200}
-                height={200}
+                width={150}
+                height={150}
               />
             </div>
           </div>
