@@ -11,7 +11,7 @@ export default function Navbar({ children }: { children: ReactNode }) {
           href={"/"}
           className="text-xl text-yellow-300 font-semibold transition hover:text-white"
         >
-          Rafael Sitompoel
+          Rafael Sitompoel();
         </Link>
 
         <ul className="md:flex hidden gap-4 font-semibold text-sm">
