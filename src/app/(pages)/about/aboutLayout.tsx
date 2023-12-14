@@ -23,7 +23,7 @@ export default function AboutLayout({ children }: { children: ReactNode }) {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 font-medium text-slate-300 text-justify m-auto lg:m-0 mt-8 indent-8 max-w-2xl text-sm md:text-xl">
+          <div className="flex flex-col gap-4 font-medium tracking-normal text-slate-300 text-justify m-auto lg:m-0 mt-8 indent-8 max-w-2xl text-sm md:text-lg">
             <p>
               Hi everyone! My name is Rafael Paulus Sitompul. I&apos;m a web
               developer from Pematang, South Sumatera. I have 1 year of
@@ -45,7 +45,7 @@ export default function AboutLayout({ children }: { children: ReactNode }) {
         <div>
           <h1 className="font-semibold text-2xl mb-6 text-slate-300">Skills</h1>
           <AboutNavItem />
-          <div>{children}</div>
+          <div className="px-2 py-6">{children}</div>
         </div>
       </div>
     </Navbar>
