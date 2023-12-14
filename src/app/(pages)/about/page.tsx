@@ -1,5 +1,5 @@
-import Image from "next/image";
 import AboutLayout from "./aboutLayout";
+import CardSkill from "@/components/cardSkill";
 
 const data = [
   { name: "html", level: "advanced" },
@@ -19,28 +19,7 @@ const data = [
 export default function about() {
   return (
     <AboutLayout>
-      <div className="grid gap-2 md:gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:px-20">
-        {data.map((doc) => (
-          <div
-            className="border h-16 md:h-20 border-yellow-500 rounded-lg p-2 md:p-4 flex items-center gap-4 font-semibold group hover:bg-yellow-500/25 transition"
-            key={doc.name}
-          >
-            <Image
-              className="w-6 md:w-8 transition group-hover:scale-125"
-              src={`/${doc.name}.svg`}
-              alt={doc.name}
-              width={100}
-              height={100}
-            />
-            <div className="grid items-center">
-              <p className="text-sm md:text-base">{doc.name.toUpperCase()}</p>
-              <p className="capitalize text-xs hidden transition group-hover:inline text-yellow-500">
-                {doc.level}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
+      <CardSkill data={data} />
     </AboutLayout>
   );
 }

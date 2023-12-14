@@ -17,7 +17,7 @@ export default function NavbarItem() {
       <li
         className={`hover:text-slate-500 transition ${
           pathname === "/about" ? "text-white" : "text-slate-600"
-        }`}
+        } ${pathname === "/about/tools" ? "text-white" : "text-slate-600"}`}
       >
         <Link href={"/about"}>About</Link>
       </li>
