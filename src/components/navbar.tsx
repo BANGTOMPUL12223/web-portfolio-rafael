@@ -18,7 +18,7 @@ export default function Navbar({ children }: { children: ReactNode }) {
           <NavbarItem />
         </ul>
 
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="github">
           <FaGithub size="2em" />
         </Link>
       </div>
