@@ -28,13 +28,13 @@ export default function NavbarItem() {
       >
         <Link href={"/portfolio"}>Portfolio</Link>
       </li>
-      <li
+      {/* <li
         className={`hover:text-slate-500 transition ${
           pathname === "/blog" ? "text-white" : "text-slate-600"
         }`}
       >
         <Link href={"/Blog"}>Blog</Link>
-      </li>
+      </li> */}
     </>
   );
 }
