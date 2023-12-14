@@ -36,8 +36,8 @@ export default function portfolio() {
               className="rounded-xl"
               src={`/portfolio/${doc.image}`}
               alt={doc.title}
-              width={1000}
-              height={1000}
+              width={500}
+              height={500}
             />
             <p className="font-medium text capitalize text-center">
               {doc.title}
