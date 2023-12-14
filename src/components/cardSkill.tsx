@@ -14,7 +14,7 @@ export default function CardSkill({
         >
           <Image
             className="w-6 md:w-8 transition group-hover:scale-125"
-            src={`/${doc.name}.svg`}
+            src={`/logo/${doc.name}.svg`}
             alt={doc.name}
             width={100}
             height={100}

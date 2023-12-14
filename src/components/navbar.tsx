@@ -6,7 +6,7 @@ import NavbarItem from "./navbarItems";
 export default function Navbar({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className="fixed bg-black w-screen py-4 flex justify-around items-center">
+      <div className="fixed backdrop-blur bg-black/50 w-screen py-4 flex justify-around items-center">
         <Link
           href={"/"}
           className="text-xl text-yellow-300 font-semibold transition hover:text-white"
