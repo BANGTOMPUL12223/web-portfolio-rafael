@@ -27,18 +27,19 @@ export default function portfolio() {
 
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 lg:p-10">
         {data.map((doc) => (
-          <Link
-            href={doc.linkWeb}
+          <div
             className="p-5 bg-slate-900 rounded-xl grid gap-4 max-w-xl m-auto transition hover:bg-slate-800 hover:-translate-y-2"
             key={doc.title}
           >
-            <Image
-              className="rounded-xl"
-              src={`/portfolio/${doc.image}`}
-              alt={doc.title}
-              width={500}
-              height={500}
-            />
+            <Link href={doc.linkWeb}>
+              <Image
+                className="rounded-xl"
+                src={`/portfolio/${doc.image}`}
+                alt={doc.title}
+                width={500}
+                height={500}
+              />
+            </Link>
             <p className="font-medium text capitalize text-center">
               {doc.title}
             </p>
@@ -49,7 +50,7 @@ export default function portfolio() {
             <Link className="flex justify-end" href={doc.linkGithub}>
               <FiGithub size="2em" />
             </Link>
-          </Link>
+          </div>
         ))}
       </div>
     </Navbar>
